@@ -18,6 +18,6 @@ public class MemberServiceImpl implements MemberService{
                 .orElseThrow(NotFoundMember::new);
     }
 
-    public static class NotFoundMember extends RuntimeException {
+    private static class NotFoundMember extends RuntimeException {
     }
 }
